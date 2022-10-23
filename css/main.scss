@@ -1,0 +1,16 @@
+// Utilities
+@import './utils/variables';
+@import './utils/functions';
+@import './utils/responsive';
+@import './utils/reset';
+@import './utils/global';
+@import './utils/mixins';
+@import './utils/components';
+
+
+// Template Parts
+@import './layouts/auth-area';
+@import './layouts/header';
+// @import './template-parts/landing';
+// @import './template-parts/hero';
+// @import './template-parts/footer';

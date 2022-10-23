@@ -1,0 +1,40 @@
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background-color: $color-1-dark;
+	color: $color-4;
+	font-family: $font-urbanist;
+}
+
+.layout {
+	position: relative;
+}
+
+
+svg {
+	max-width: rem-calc(14);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	background: none;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	font: inherit;
+	outline: none;
+}
