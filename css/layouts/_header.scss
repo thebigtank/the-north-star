@@ -1,0 +1,77 @@
+.layout.header {
+    padding: 25px 0;
+
+    .row {
+        @include flex(flex, center, space-between);
+    }
+
+    svg {
+        fill: $color-3;
+    }
+
+    .search {
+        @include flex(flex, center, space-between);
+        input {
+            background: none;
+            border: none;
+            outline: none;
+            color: $color-4;
+            width: 200px;
+            padding-left: 20px;
+
+            &::placeholder {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .featured-menu {
+        @include flex(flex, center, space-between);
+        gap: 20px;
+        &__menu-item {
+            a {
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+
+            &.logo {
+                a {
+                    font-size: 55px;
+                    font-family: $font-tiro;
+                    @include flex(flex, center, initial);
+                    gap: 10px;
+                    padding: 0 10px;
+
+                    span {
+                        &:first-child {
+                            font-size: 28px;
+                        }
+                        &:last-child {
+                            letter-spacing: -1px;
+                        }
+                    }
+                }
+            }
+
+            &:not(.logo) {
+                a {
+                    transition: 250ms ease-in-out;
+                    &:hover {
+                        color: $color-3;
+                    }
+                }
+            }
+        }
+    }
+
+    .app-btn-group {
+        @include flex(flex, center, space-between);
+
+        a {
+            color: $color-3;
+            font-size: rem-calc(14);
+        }
+    }
+}

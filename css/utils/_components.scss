@@ -1,7 +1,37 @@
-%site-wrapper {
-	max-width: rem-calc($desktop);
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: rem-calc(20);
-	padding-right: rem-calc(20);
+.btn {
+	width: rem-calc(160);
+	padding: rem-calc(8) 0;
+	font-size: rem-calc(12);
+	font-weight: 600;
+	@include flex(flex, center, center);
+	gap: rem-calc(10);
+	
+	span {
+		display: block;
+		&::first-letter {
+			text-transform: capitalize;
+		}
+	}
+
+	&.primary {
+		background-color: $color-3;
+		color: $color-1-darker;
+	}
+
+	&.alt {
+		background-color: color-1-darker;
+		color: $color-3;
+	}
+
+	svg {
+		max-width: rem-calc(18);
+		path {
+			stroke-width: rem-calc(3);
+		}
+	}
+
+	&.icon {
+		width: rem-calc(30);
+		height: rem-calc(30);
+	}
 }

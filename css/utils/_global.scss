@@ -20,9 +20,19 @@ body {
 	position: relative;
 }
 
+.wrapper {
+	max-width: rem-calc($desktop-large);
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: rem-calc(20);
+	padding-right: rem-calc(20);
+}
+
 
 svg {
 	max-width: rem-calc(14);
+	height: 100%;
+    width: 100%;
 }
 
 a {

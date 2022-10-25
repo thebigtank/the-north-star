@@ -2,10 +2,6 @@
     background-color: $color-1-darker;
 
     .wrapper {
-        @extend %site-wrapper;
-        max-width: rem-calc($desktop);
-        
-            
         @media screen and (max-width: $desktop) {
             // When the viewport is smaller than desktop screens,
             // we need to stretch the wrapper end-to-end.
@@ -15,13 +11,6 @@
 
     .row {
         @include flex(flex, center, space-between);
-    }
-
-    .col {
-        &:last-child {
-            // position: absolute;
-            // right: 0;
-        }
     }
 
 
@@ -34,7 +23,7 @@
                 display: block;
                 width: rem-calc(30);
                 height: rem-calc(30);
-                @include flex(flex, center, center);
+                @include flex(flex, center, flex-start);
 
                 &:hover {
                     svg {
@@ -54,37 +43,5 @@
 
     .auth-links {
         display: flex;
-        .btn {
-            width: rem-calc(160);
-            padding: rem-calc(8) 0;
-            font-size: rem-calc(12);
-            font-weight: 600;
-            @include flex(flex, center, center);
-            gap: rem-calc(10);
-            
-            span {
-                display: block;
-                &::first-letter {
-                    text-transform: capitalize;
-                }
-            }
-
-            &.primary {
-                background-color: $color-3;
-                color: $color-1-darker;
-            }
-
-            &.alt {
-                background-color: color-1-darker;
-                color: $color-3;
-            }
-
-            svg {
-                max-width: rem-calc(18);
-                path {
-                    stroke-width: rem-calc(3);
-                }
-            }
-        }
     }
 }
