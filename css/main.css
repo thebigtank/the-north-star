@@ -57,7 +57,7 @@ html {
 
 body {
   background-color: #0b090a;
-  color: #cecece;
+  color: #fcfcfc;
   font-family: "Urbanist", sans-serif;
 }
 
@@ -95,7 +95,7 @@ button {
 
 .btn {
   width: 10rem;
-  padding: 0.5rem 0;
+  padding: 0.625rem 0;
   font-size: 0.75rem;
   font-weight: 600;
   display: flex;
@@ -114,7 +114,7 @@ button {
   color: #060605;
 }
 .btn.alt {
-  background-color: color-1-darker;
+  background-color: #060605;
   color: #e1c83f;
 }
 .btn svg {
@@ -125,7 +125,6 @@ button {
 }
 .btn.icon {
   width: 1.875rem;
-  height: 1.875rem;
 }
 
 .layout.auth-area {
@@ -160,7 +159,7 @@ button {
   opacity: 1;
 }
 .layout.auth-area .social-links .link-item svg {
-  fill: #cecece;
+  fill: #fcfcfc;
   opacity: 0.3;
   transition: 150ms;
 }
@@ -168,13 +167,19 @@ button {
   display: flex;
 }
 
-.layout.header {
-  padding: 25px 0;
-}
 .layout.header .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0.875rem 0;
+}
+.layout.header .row.row__one {
+  padding: 1.125rem 0;
+}
+.layout.header .row.row__two {
+  border-top: 1px solid rgba(252, 252, 252, 0.1);
+  border-bottom: 1px solid rgba(252, 252, 252, 0.1);
+  justify-content: center;
 }
 .layout.header svg {
   fill: #e1c83f;
@@ -188,9 +193,9 @@ button {
   background: none;
   border: none;
   outline: none;
-  color: #cecece;
-  width: 200px;
-  padding-left: 20px;
+  color: #fcfcfc;
+  width: 12.5rem;
+  padding-left: 1.25rem;
 }
 .layout.header .search input::-moz-placeholder {
   opacity: 0.5;
@@ -205,25 +210,25 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .layout.header .featured-menu__menu-item a {
   display: block;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   text-transform: capitalize;
 }
 .layout.header .featured-menu__menu-item.logo a {
-  font-size: 55px;
+  font-size: 3.4375rem;
   font-family: "Tiro Gurmukhi", serif;
   display: flex;
   align-items: center;
   justify-content: initial;
-  gap: 10px;
-  padding: 0 10px;
+  gap: 0.625rem;
+  padding: 0 0.625rem;
 }
 .layout.header .featured-menu__menu-item.logo a span:first-child {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 .layout.header .featured-menu__menu-item.logo a span:last-child {
   letter-spacing: -1px;
@@ -238,8 +243,25 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.1875rem;
 }
 .layout.header .app-btn-group a {
   color: #e1c83f;
   font-size: 0.875rem;
+}
+.layout.header .main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.layout.header .main-menu__menu-item a {
+  opacity: 0.5;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: 150ms ease-in-out;
+}
+.layout.header .main-menu__menu-item a:hover {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

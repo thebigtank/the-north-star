@@ -1,6 +1,6 @@
 .btn {
 	width: rem-calc(160);
-	padding: rem-calc(8) 0;
+	padding: rem-calc(10) 0;
 	font-size: rem-calc(12);
 	font-weight: 600;
 	@include flex(flex, center, center);
@@ -19,7 +19,7 @@
 	}
 
 	&.alt {
-		background-color: color-1-darker;
+		background-color: $color-1-darker;
 		color: $color-3;
 	}
 
@@ -32,6 +32,6 @@
 
 	&.icon {
 		width: rem-calc(30);
-		height: rem-calc(30);
+		// height: rem-calc(30);
 	}
 }
