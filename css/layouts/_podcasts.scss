@@ -1,0 +1,55 @@
+.layout.podcasts {
+    padding: rem-calc(28) 0;
+    .row {
+        @include flex(flex, center, space-between);
+        gap: rem-calc(20)
+    }
+
+    .col {
+        @include flex(flex, center, space-between);
+        gap: rem-calc(26);
+    }
+
+    .image {
+        width: rem-calc(50);
+        height: rem-calc(50);
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .content {
+        transition: all 250ms ease-in-out;
+
+        span {
+            display: block;
+            font-weight: 500;
+        }
+        
+        .title {
+            font-size: rem-calc(14);
+            margin-bottom: rem-calc(6);
+            q {
+                text-transform: capitalize;
+            }
+        }
+
+        .byline {
+            font-size: rem-calc(12);
+            opacity: 0.35;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: rem-calc(200);
+            
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}
